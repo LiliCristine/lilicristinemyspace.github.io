@@ -1,0 +1,102 @@
+nav {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    border-radius: 5px;
+    /*margin-right: 100px;*/
+}
+
+a {
+    float: left;
+   /* display: inline-block;   esse nao é válido aqui*/
+    color: white;
+    text-align: center;
+    padding: 15px 50px;
+    text-decoration: none;
+    font-size: 180%;
+}
+
+a:hover {
+    background-color: #111;
+}
+
+.active {
+    background-color: red;
+}
+
+
+div {
+    max-width: 80%;
+    float: left;
+}
+
+.aside {
+  
+    float:right;
+      width: 18%;
+      height: 18%;
+      border-radius: 10px;
+      /*margin-right: 130px;
+      margin-top: 40px;*/    
+     
+  }   
+
+p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 140%;
+    /*padding-right: 100px;  */   
+    text-align: justify;
+}
+ 
+hr {
+    border: 0;
+    border-top: 2px solid rgb(212, 18, 18); 
+} 
+
+
+body {
+    background-color: rgba(167, 237, 241, 0.432);
+    margin-left: 15px;  
+}
+
+.far {
+    color: rgb(206, 40, 11);
+}
+
+.fas {   
+background: rgb(228,75,11);
+background: linear-gradient(0deg, rgba(228,75,11,1) 14%, rgba(9,121,46,1) 49%, rgba(216,232,6,0.8354692218684349) 100%);
+}
+
+h1 {
+  /*  padding-left: 15px;*/
+    font-size: 250%;   
+}
+
+footer {
+    background-color: rgba(157, 163, 163, 0.788);
+    float: none;
+    float: left;
+   
+    font-size: 150%;       
+    border-radius: 5px; 
+
+    
+}
+
+    
+
+
+/*esse midia query se usa para diferentes devices. Aqui, se a tela for 500px ou menos, a cor 
+do backfround muda. CUIDADO! TUDO O QUE VC COLOCAR DAQUI EM DIANTE SE APLICA AO QUERY E NAO A PAGINA ORIGINAL*/
+@media only screen and (max-width:500px) {
+    body {
+        background-color: white;
+    }
+    .aside {
+        display: none;
+    }
+}
+
+
